@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.4
       - run: |
-         ls -l
+         echo "$PWD"
          mkdir cmake-demo
          cd cmake-demo
          cmake .. 
