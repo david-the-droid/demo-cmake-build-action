@@ -17,3 +17,4 @@ jobs:
          mkdir demo-build
          cd demo-build
          cmake .. 
+         make
