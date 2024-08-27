@@ -5,9 +5,9 @@ on:
   workflow_call:
 
 jobs:
-  test_ccs_build:
+  test_cpp_build:
     runs-on: ubuntu-latest
-    name: Test palindrome project
+    name: Build demo
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.4
