@@ -1,0 +1,22 @@
+---
+name: Build project
+
+on:
+  workflow_call:
+  
+
+jobs: 
+  build_cpp_project:
+    runs-on: ubuntu-latest
+    name: Demo build run
+    steps:
+      - name: Checkout project
+      - uses: action/checkout@v4.1.4
+      
+      - name: Build project
+        run: |
+          mkdir demo-build-dir
+          cd demo-build-dir
+          cmake ..
+          make
+        
