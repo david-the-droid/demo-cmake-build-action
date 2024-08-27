@@ -13,5 +13,6 @@ jobs:
       - name: Checkout & run 
         uses: actions/checkout@v4.1.4
       - name: make directory
+      - id: make directory
       - run: |
          mkdir cmake-demo
