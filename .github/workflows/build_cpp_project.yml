@@ -10,10 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build demo
     steps:
-      - name: Checkout
+      - name: Checkout & run 
         uses: actions/checkout@v4.1.4
-        
-      - name: build cmake
-        shell: pwsh
       - run: |
          mkdir cmake-demo
