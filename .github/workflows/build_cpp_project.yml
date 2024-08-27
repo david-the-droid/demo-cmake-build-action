@@ -1,6 +1,9 @@
 ---
 name: Build project
 
+on:
+  workflow_call:
+
 jobs:
   test_ccs_build:
     runs-on: ubuntu-latest
