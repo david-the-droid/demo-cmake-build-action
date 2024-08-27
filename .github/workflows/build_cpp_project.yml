@@ -16,5 +16,5 @@ jobs:
          echo *
          mkdir demo-build
          cd demo-build
-         cmake ../demo-cmake-build-action
+         cmake ../
          make
