@@ -13,6 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.4
       - run: |
+         ls -l
          mkdir cmake-demo
          cd cmake-demo
          cmake .. 
