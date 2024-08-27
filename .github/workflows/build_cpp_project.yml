@@ -14,5 +14,6 @@ jobs:
         uses: actions/checkout@v4.1.4
         
       - name: build cmake
+        shell: pwsh
       - run: |
          mkdir cmake-demo
