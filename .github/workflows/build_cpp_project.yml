@@ -10,9 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Build demo
     steps:
-      - name: Checkout & run 
+      - name: Checkout
         uses: actions/checkout@v4.1.4
-      - name: make directory
-      - id: make directory
       - run: |
          mkdir cmake-demo
+         cd cmake-demo
+         cmake .. 
+         make
