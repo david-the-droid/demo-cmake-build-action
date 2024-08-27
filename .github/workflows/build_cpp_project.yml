@@ -1,20 +1,10 @@
 ---
 name: Build project
 
-on:
-  workflow_dispatch:
-  
-jobs: 
-  build_cpp_project:
+jobs:
+  test_ccs_build:
     runs-on: ubuntu-latest
-    name: Demo build run
+    name: Test palindrome project
     steps:
-      - name: Checkout project
-      - uses: action/checkout@v4.1.4    
-      
-      - name: Build project
-        run: |
-          mkdir demo-build-dir
-          cd demo-build-dir
-          cmake ..
-          make
+      - name: Checkout
+        uses: actions/checkout@v4.1.4
