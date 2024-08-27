@@ -15,4 +15,4 @@ jobs:
         
       - name: build cmake
       - run: |
-          mkdir cmake-demo
+         mkdir cmake-demo
