@@ -3,6 +3,7 @@ name: Build project
 
 on:
   workflow_call:
+  workflow_dispatch:
 
 jobs:
   test_cpp_build:
