@@ -1,4 +1,4 @@
 
 add_subdirectory(MathSqrtLib) 
 
-add_library(MathLib MathLib.cpp)
+add_library(MathLib MathLib.cpp MathSqrtLib.cpp)
