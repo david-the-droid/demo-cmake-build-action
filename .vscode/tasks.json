@@ -9,6 +9,7 @@
         "-g",
         "${workspaceFolder}/src/*.cpp",
         "${workspaceFolder}/src/MathLib/*.cpp",
+        "${workspaceFolder}/src/MathLib/MathSqrtLib/*.cpp",
         "-o",
         "${fileDirname}\\${fileBasenameNoExtension}.exe"
       ],
