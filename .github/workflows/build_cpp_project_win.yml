@@ -1,0 +1,14 @@
+---
+name: Build cpp project
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  test_cpp_build:
+    runs-on: windows-latest
+    name: Build demo
+    steps:
+      - name: Checkout Files
+        uses: actions/checkout@v4.1.4
