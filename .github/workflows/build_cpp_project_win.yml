@@ -12,3 +12,7 @@ jobs:
     steps:
       - name: Checkout Files
         uses: actions/checkout@v4.1.4
+      - name: Check Winget version
+        shell: pwsh
+        run: |
+         winget --version
