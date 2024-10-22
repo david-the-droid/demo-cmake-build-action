@@ -16,3 +16,4 @@ jobs:
         shell: pwsh
         run: |
          choco install cmake
+         cmake --version
