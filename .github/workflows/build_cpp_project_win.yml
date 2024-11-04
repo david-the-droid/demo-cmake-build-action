@@ -23,5 +23,6 @@ jobs:
           mkdir demo-build
           cd demo-build
           cmake ..
+          dir
           make
           
