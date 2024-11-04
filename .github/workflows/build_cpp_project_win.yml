@@ -22,7 +22,7 @@ jobs:
         run: |
           mkdir demo-build
           cd demo-build
-          cmake -G "NMake Makefiles" .. 
+          cmake .. -G "NMake Makefiles"
           dir
           make
           
