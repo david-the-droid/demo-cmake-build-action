@@ -17,8 +17,6 @@ jobs:
         run: |
          choco install cmake
          cmake --version
-      - name: Add msbuild to PATH
-        uses: microsoft/setup-msbuild@v2
       - name: Generate Cmake Configuration
         shell: pwsh
         run: |
