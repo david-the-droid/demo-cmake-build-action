@@ -17,13 +17,11 @@ jobs:
         run: |
          choco install cmake
          cmake --version
-      - name: Generate Cmake Configuration
+      - name: Generate Cmake Configuration & Build 
         shell: pwsh
         run: |
           mkdir demo-build
           cd demo-build
           cmake ..
-      - name: Build Cmake
-        shell: pwsh
-        run: |
           make
+          
