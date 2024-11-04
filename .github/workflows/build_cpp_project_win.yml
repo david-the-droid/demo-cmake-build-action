@@ -17,11 +17,13 @@ jobs:
         run: |
          choco install cmake
          cmake --version
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v2
       - name: Generate Cmake Configuration & Build 
         shell: pwsh
         run: |
           mkdir demo-build
           cd demo-build
           cmake .. 
-          cmake --build . -G "NMake Makefiles"
+          msbuild demo.sln
           
