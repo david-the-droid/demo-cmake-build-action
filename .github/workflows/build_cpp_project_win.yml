@@ -19,12 +19,14 @@ jobs:
          cmake --version
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v2
-      - name: Generate Cmake Configuration & Build 
+      - name: Generate Cmake Configuration
         shell: pwsh
         run: |
           mkdir demo-build
           cd demo-build
           cmake .. -G"Unix Makefiles"
-          dir
+      - name: Build MakeFile
+        shell: pwsh
+        run: |
           make
           
