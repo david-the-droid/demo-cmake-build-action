@@ -12,3 +12,15 @@ jobs:
     steps:
       - name: Checkout Files
         uses: actions/checkout@v4.1.4
+      - name: Install cmake
+        shell: pwsh
+        run: |
+         choco install cmake
+         cmake --version
+      - name: Generate Cmake Configuration
+        shell: pwsh
+        run: |
+          mkdir demo-build
+          cd demo-build
+          cmake .. -G"Unix Makefiles"
+          make          
