@@ -19,4 +19,7 @@ jobs:
          cmake --version
       - name: Build Cmake Configuration
         shell: pwsh
-        run: dir
+        run: |
+          mkdir demo-build
+          cd demo-build
+          cmake ..
