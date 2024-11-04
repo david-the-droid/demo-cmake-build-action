@@ -24,6 +24,7 @@ jobs:
         run: |
           mkdir demo-build
           cd demo-build
-          cmake .. 
-          msbuild demo.sln
+          cmake .. -G"Unix Makefiles"
+          dir
+          make
           
